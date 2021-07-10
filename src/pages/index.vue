@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div>INDEX</div>
+  <div class="flex pl-12">
+    <div>nuxt-ts-tailwind-template</div>
     <div v-for="(sample, index) in samples" :key="index">{{ sample.num }}</div>
   </div>
 </template>

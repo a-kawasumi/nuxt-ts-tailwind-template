@@ -1,6 +1,15 @@
 # nuxt-ts-tailwind-template
 
-# Commit Lint
+## packages
+
+- nuxt-property-decorator
+- typescript
+- commit lint
+- husky
+- eslint
+- tailwind css
+
+## Commit Lint
 
 - build
 - ci
