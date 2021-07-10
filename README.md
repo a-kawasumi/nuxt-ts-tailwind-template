@@ -1,4 +1,18 @@
-# nuxt-typescript-tailwindcss-template
+# nuxt-ts-tailwind-template
+
+# Commit Lint
+
+- build
+- ci
+- chore
+- docs
+- feat
+- fix
+- perf
+- refactor
+- revert
+- style
+- test
 
 ## Build Setup
 

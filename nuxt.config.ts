@@ -1,7 +1,12 @@
 import { NuxtConfig } from "@nuxt/types";
+import { resolve } from 'path'
 
 const config: NuxtConfig = {
+  ssr: false,
   srcDir: 'src/',
+  alias: {
+    '~': resolve(__dirname, './src'),
+  },
   server: {
     port: 8000
   },
@@ -31,7 +36,20 @@ const config: NuxtConfig = {
     jit: true,
     // tailwindチートシート
     viewer: false
-  }
+  },
+  build: {
+    extend(conf, ctx) {
+       if (ctx.isDev && ctx.isClient && conf?.module) {
+          // 保存時のeslint
+          conf.module.rules.push({
+           enforce: "pre",
+           test: /\.(js|vue)$/,
+           loader: "eslint-loader",
+           exclude: /(node_modules)/
+          })
+       }
+     }
+   }
 };
 
 export default config;
