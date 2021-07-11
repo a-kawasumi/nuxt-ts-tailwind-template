@@ -14,7 +14,7 @@
     "generate": "nuxt generate --modern",
     "analyze": "yarn build -a",
     "test": "",
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -36,6 +36,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.13.0",
     "husky": "^7.0.0",
+    "lint-staged": "^11.0.0",
     "postcss": "^8.2.8",
     "prettier": "^2.3.2",
     "tailwindcss": "^2.1.1"
